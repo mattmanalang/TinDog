@@ -95,7 +95,6 @@ p {
 /* Testimonials */
 #testimonials {
   text-align: center;
-  padding: 7% 15%;
   background-color: #ef8172;
   color: #fff;
 }
@@ -104,6 +103,10 @@ p {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%; /*This was moved from the #testimonials in order to let the carousel buttons be outside the testimonials and have a larger area to be activated*/
 }
 
 
