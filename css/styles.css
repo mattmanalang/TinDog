@@ -1,24 +1,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat';
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-h2 {
-  font-family: 'Montserrat';
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-
-h3 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
 
@@ -26,15 +12,39 @@ p {
   color: #8f8f8f;
 }
 
-#title {
+/* Containers  */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.color-bg {
   background-color: #ff4c68;
   color: #fff;
 }
 
-.container-fluid {
-  padding: 3% 15% 7%;
+.white-bg {
+  background-color: #fff;
 }
 
+/* Title Section */
+#title .container-fluid { /*Targets container-fluid inside the title section */
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
 
 /* Navigation Bar */
 .navbar {
@@ -76,16 +86,28 @@ p {
   right: 30%;
 }
 
+@media (max-width: 1028px) {
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
 
 /* Features */
 #features {
-  padding: 7% 15%;
-  background-color: #fff;
   position: relative;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+}
+
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 
@@ -101,9 +123,7 @@ p {
 
 /* Testimonials */
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
 .testimonial-img {
@@ -112,15 +132,15 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%; /*This was moved from the #testimonials in order to let the carousel buttons be outside the testimonials and have a larger area to be activated*/
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 
 /* Press */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -133,9 +153,19 @@ p {
 /* Pricing */
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
 .pricing-col {
   padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/* Footer */
+.social-icon {
+  margin: 20px 10px;
 }
